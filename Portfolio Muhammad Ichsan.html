@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio Graphic Designer & Laravel Developer - Modern, Clean, Professional">
+    <title>Muhammad Ichsan - Graphic Designer & Laravel Developer</title>
+    <meta name="keywords" content="graphic designer, Laravel developer, portfolio, UI/UX, web design">
+    <meta name="author" content="Muhammad Ichsan">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎨</text></svg>">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- link css -->
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loading" id="loading">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="logo"><img src="img/logo.png" alt=""></div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="floating-shapes">
+            <div class="shape"></div>
+            <div class="shape"></div>
+            <div class="shape"></div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-text reveal">
+                <p class="title">Graphic Designer & Laravel Developer</p>
+                <h1>Turning Ideas<br>into<br><span style="background: var(--accent-gradient); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">great visual</span></h1>
+                <a href="#contact" class="cta-button">
+                    Get started
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+            <div class="profile-image reveal"><img src="img/reveal.png" alt=""></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section reveal">
+        <h2 class="section-title">ABOUT ME</h2>
+        <div class="about-content">
+            <p class="about-text">
+                Graphic Designer & Laravel Developer with 5+ years of experience turning ideas into meaningful digital experiences. I blend creative design, user-focused thinking, and robust development to create products that look great and perform seamlessly.
+            </p>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+        <h2 class="section-title">Skills & Expertise</h2>
+        <div class="skills-grid">
+            <div class="skill-card reveal">
+                <i class="fa-brands fa-laravel skill-icon"></i>
+                <h3>Laravel Development</h3>
+                <div class="skill-progress">
+                    <div class="progress-fill" data-width="50%"></div>
+                </div>
+            </div>
+            <div class="skill-card reveal">
+                <i class="fa-solid fa-robot skill-icon"></i>
+                <h3>AI Mastering</h3>
+                <div class="skill-progress">
+                    <div class="progress-fill" data-width="85%"></div>
+                </div>
+            </div>
+            <div class="skill-card reveal">
+                <i class="fa-solid fa-palette skill-icon"></i>
+                <h3>design graphic</h3>
+                <div class="skill-progress">
+                    <div class="progress-fill" data-width="80%"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="section">
+        <h2 class="section-title">Portfolio</h2>
+        <div class="portfolio-grid">
+            <div class="project-card reveal">
+                <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="E-commerce Dashboard" class="project-image">
+                <div class="project-overlay">
+                    <h3 class="project-title">Laravel project</h3>  
+                    <a href="#" class="cta-button" style="background: rgba(255,255,255,0.2); border: 1px solid rgba(255,255,255,0.3);">
+                        See Detail
+                    </a>
+                </div>
+            </div>
+            <div class="project-card reveal">
+                <img src="img/design.jfif" alt="Portfolio Website" class="project-image">
+                <div class="project-overlay">
+                    <h3 class="project-title">Design project</h3>
+                    <a href="#" class="cta-button" style="background: rgba(255,255,255,0.2); border: 1px solid rgba(255,255,255,0.3);">
+                        See Detail
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <h2 class="section-title">Let's Work Together</h2>
+        <div class="contact-content reveal">
+            <p style="font-size: 1.2rem; color: var(--text-secondary); margin-bottom: 3rem;">
+                Have an exciting project? Let's turn your idea into a stunning digital reality.
+            </p>
+            <form class="contact-form">
+                <div class="form-group">
+                    <input type="text" class="form-input" placeholder="Nama Lengkap" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" class="form-input" placeholder="Email" required>
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-input" placeholder="Subjek">
+                </div>
+                <div class="form-group">
+                    <textarea class="form-textarea" rows="5" placeholder="Pesan Anda..."></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Send message</button>
+            </form>
+            <div class="social-links">
+                <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2026 Muhammad Ichsan. </p>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
